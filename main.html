@@ -1,0 +1,108 @@
+<!--Test Project: 1-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale= 1.0" />
+    <title>K-Quiz Channel</title>
+    <link rel="stylesheet" href="ss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="Quiz_intro">
+        <div class="intro_head">
+            <span>
+                <H3>Kritika's Quiz Channel</H3>
+                <h4>Internship Project Quiz</h4>
+            </span>
+        </div>
+        <div class="intro_body">
+            <div class="intro">This Quiz contains some interesting G.K. about various companies.</div>
+            <div class="intro">Click on "Start Quiz" to test your knowledge.</div>
+        </div>
+        <div class="start_btn">
+            <button class="start_quiz">Start Quiz</button>
+        </div>
+    </div>
+    <!-- start Quiz button -->
+
+
+    <!-- Info Box -->
+    <div id="wrapper" class="info_box">
+        <div class="info_title">
+            <span>Some Rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have <span>20 seconds</span> to answer each question.</div>
+            <div class="info">2. Once you select your answer, you can't re selesct</div>
+            <div class="info">3. You can't select any option once timer goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!--Quiz Box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Kritika's Quiz Panel</div>
+            <div class="timer">
+                <div class="timer_text">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <Section>
+            <!-- Inserting question from questions.js file-->
+            <div class="que_text">
+
+            </div>
+            <!-- Inserting options from questions.js file-->
+            <div class="option_list">
+
+            </div>
+        </Section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Inserting Question Count -->
+                <span>
+                    <p>2</p>of<p>5</p>Questions
+                </span>
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!--Result box-->
+    <div class="result_box">
+        <div class="icon">
+            <span>&#128081;</span>
+        </div>
+
+        <div class="complete_text">You've completed the Quiz!</div>
+        <!-- Inserting Score Result -->
+        <div class="score_text">
+            <span>You got <p>2</p> out of <p>5</p></span>
+        </div>
+
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!--inserted Questions and Options only -->
+    <script src="questions.js"></script>
+
+    <script src="scpt.js"></script>
+
+</body>
+
+</html>
